@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'Stack',
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('RenderBox'),
+          title: const Text('Stack'),
           elevation: 0,
           foregroundColor: Colors.cyanAccent,
           backgroundColor: Colors.black,
