@@ -11,9 +11,19 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: 'Stack',
-      home: AAA(),
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('RenderBox'),
+          elevation: 0,
+          foregroundColor: Colors.cyanAccent,
+          backgroundColor: Colors.black,
+          centerTitle: true,
+        ),
+        backgroundColor: Colors.greenAccent[100],
+        body: const AAA(),
+      ),
     );
   }
 }
@@ -23,21 +33,11 @@ class AAA extends StatelessWidget {
   final double _infinity = double.infinity;
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Stack'),
-        elevation: 0,
-        foregroundColor: Colors.cyanAccent,
-        backgroundColor: Colors.black,
-        centerTitle: true,
-      ),
-      backgroundColor: Colors.brown[200],
-      // body: test2(),
-      body: test4(),
-      // body: test3(),
-      // body: test(),
+    return test4();
+    // body: test3(),
+    // body: test(),
 
-      /* Center(
+    /* Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -54,7 +54,6 @@ class AAA extends StatelessWidget {
           ],
         ),
       ), */
-    );
   }
 
   Widget test4() {
