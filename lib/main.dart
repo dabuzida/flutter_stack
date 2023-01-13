@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.black,
           centerTitle: true,
         ),
-        backgroundColor: Colors.greenAccent[100],
+        backgroundColor: Colors.grey.shade100,
         body: const AAA(),
       ),
     );
@@ -35,7 +35,7 @@ class AAA extends StatelessWidget {
   Widget build(BuildContext context) {
     return test4();
     // body: test3(),
-    // body: test(),
+    // return test();
 
     /* Center(
         child: Column(
@@ -58,44 +58,23 @@ class AAA extends StatelessWidget {
 
   Widget test4() {
     return Container(
-      width: 900,
-      height: 800,
-      decoration: BoxDecoration(
-        border: Border.all(color: Colors.amber, width: 2),
-      ),
-      child: Container(
-        width: 600,
-        decoration: BoxDecoration(
-          border: Border.all(color: Colors.indigo, width: 2),
-        ),
-        child: Row(
-          // mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
-            Container(
-              width: 500,
-              height: 100,
-              decoration: BoxDecoration(
-                border: Border.all(color: Colors.red, width: 2),
-              ),
-              child: Row(
-                children: <Widget>[
-                  Container(
-                    // width: 100,
-                    height: 50,
-                    decoration: BoxDecoration(
-                      border: Border.all(color: Colors.yellow, width: 2),
-                    ),
-                    child: Text('dsfsdfsdfsd'),
-                  ),
-                ],
-              ),
-            ),
-            Text('data'),
-            Text('data'),
-            Text('data'),
-            Text('data'),
-          ],
-        ),
+      color: Colors.tealAccent.shade100,
+      // width: 800,
+      // height: 400,
+      child: Stack(
+        children: <Widget>[
+          Container(width: 300, height: 200, color: Colors.blue.shade100),
+          Container(width: 400, height: 300, color: Colors.red.shade100),
+          Container(color: const Color.fromARGB(96, 128, 128, 128)),
+          // Text(
+          //   'SEVEN POINT ONE',
+          //   style: TextStyle(fontSize: 50),
+          // ),
+          // Text(
+          //   'SEVEN POINT ONE',
+          //   style: TextStyle(fontSize: 50),
+          // ),
+        ],
       ),
     );
   }
