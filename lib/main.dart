@@ -33,7 +33,7 @@ class AAA extends StatelessWidget {
   final double _infinity = double.infinity;
   @override
   Widget build(BuildContext context) {
-    return test4();
+    return Center(child: test4());
     // body: test3(),
     // return test();
 
@@ -58,23 +58,17 @@ class AAA extends StatelessWidget {
 
   Widget test4() {
     return Container(
-      color: Colors.tealAccent.shade100,
-      // width: 800,
-      // height: 400,
-      child: Stack(
-        children: <Widget>[
-          Container(width: 300, height: 200, color: Colors.blue.shade100),
-          Container(width: 400, height: 300, color: Colors.red.shade100),
-          Container(color: const Color.fromARGB(96, 128, 128, 128)),
-          // Text(
-          //   'SEVEN POINT ONE',
-          //   style: TextStyle(fontSize: 50),
-          // ),
-          // Text(
-          //   'SEVEN POINT ONE',
-          //   style: TextStyle(fontSize: 50),
-          // ),
-        ],
+      color: Colors.tealAccent.shade400,
+      width: 800,
+      height: 400,
+      child: Center(
+        child: Stack(
+          children: <Widget>[
+            Container(width: 300, height: 300, color: Colors.blue.shade100),
+            Container(width: 100, height: 100, color: Colors.red.shade100),
+            Container(width: 50, height: 50, color: Colors.green),
+          ],
+        ),
       ),
     );
   }
